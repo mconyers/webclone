@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@keyframes menuColor {
+    from {
+        color: #000;
+    }
+
+    to {
+        color: #ff4a32;
+    }
+}
+
+@keyframes button {
+    0% {
+        background-color: #ff4a32;
+    }
+
+    100% {
+        background-color: #5F6368;
+    }
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+#topspace1 {
+    margin: 0;
+    height: 15px;
+    width: 100%;
+    background: #000;
+}
+
+#topspace2 {
+    margin: 0;
+    height: 6px;
+    width: 100%;
+    background: #e5e5e5;
+}
+
+header {
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 10px;
+    height: 76px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2px 1px rgb(202, 202, 202);
+    position: sticky;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 255;
+}
+
+
+#logo {
+    width: 100px
+}
+
+#logo img {
+    height: 40px;
+}
+
+#navicons img {
+    height: 20px;
+}
+
+#cart {
+    padding-left: 10px;
+}
+
+nav {
+    font-size: 14px;
+    width: 650px;
+    justify-content: space-between;
+
+
+}
+
+nav div img {
+    height: 16px;
+}
+
+#moreInfo {
+    padding-right: 5px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    animation-name: menuColor;
+    animation-duration: 0.5s;
+    animation-fill-mode: forward;
+    color: #ff4a32;
+}
+
+.hero {
+    /* background-color: aqua; */
+    height: 417px;
+    width: 33.33%;
+    position: relative;
+
+}
+
+#hero1:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url("assets/boosted-rev-electric-scooter-now-in-stock_c5926a3e-f2ff-46a9-9c91-97765798bac4_1000x.webp");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+
+#hero2:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(assets/evolve-electric-skateboard-now-in-stock_1000x.webp);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+#hero3:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(assets/minimotors-electric-scooters-2_1000x.webp);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+
+.demo-content {
+    margin-top: 140px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+}
+
+.demo-content div img {
+    height: 65px;
+}
+
+.divider {
+    width: 80px;
+    height: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+#divider {
+    justify-content: center;
+}
+
+#mag {
+    height: 83px;
+    width: 100vw;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section {
+    justify-content: center;
+    margin: 40px;
+}
+
+section div {
+    width: 50vw;
+}
+
+section div div {
+    font-weight: 100 bold;
+    text-align: center;
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+article {
+    /* background-color: #5F6368; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* column-gap: 20px;
+    background-color: #ff4a32;
+    /* height: 60vw; */
+    /* min-height: 536px; */
+    /* max-height: 643px; */
+    /* align-items: center;
+    justify-content: center;
+    padding-right: 50px; */
+}
+
+article div {
+    /* padding-right: 20px;
+    max-width: 578px; */
+    box-sizing: border-box;
+    /* width: 50vw; */
+}
+
+article div img {
+    width: 40vw;
+
+}
+
+.articleText {
+    padding-left: 40px;
+    padding-right: 40px;
+    align-self: center;
+}
+
+article div p {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+#shopScooters {
+    border-radius: 25px;
+    height: 34px;
+    width: 160px;
+    padding-left: 17px;
+    padding-top: 8px;
+    background-color: #ff4a32;
+}
+
+
+#shopScooters a {
+    font-size: 14x;
+    color: #fff;
+    text-decoration: none;
+}
+
+#shopScooters:hover {
+    animation-name: button;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#shopBoards {
+    border-radius: 25px;
+    height: 34px;
+    width: 145px;
+    padding-left: 17px;
+    padding-top: 8px;
+    background-color: #ff4a32;
+}
+
+
+#shopBoards a {
+    font-size: 14x;
+    color: #fff;
+    text-decoration: none;
+}
+
+#shopBoards:hover {
+    animation-name: button;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#bike {
+    width: 100vw;
+    height: 45vw;
+    margin: 0;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-image: url(assets/bike3000x.webp);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    align-items: top;
+}
+
+#bike div {
+    /* width: 35vw; */
+}
+
+#bike h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+#shopNow {
+    border-radius: 25px;
+    width: 200px;
+    height: 26px;
+    padding-left: 0px;
+    padding-top: 8px;
+    background-color: #ff4a32;
+}
+
+
+#shopNow a {
+    text-align: center;
+    font-size: 14x;
+    color: #fff;
+    text-decoration: none;
+}
+
+#shopNow:hover {
+    animation-name: button;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#board {
+    width: 100vw;
+    height: 32vw;
+    margin: 0;
+    margin-top: 20px;
+    color: #fff;
+    background-image: url(assets/evolve-skateboards-1_2500x.webp);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    align-items: top;
+    padding-top: 120px;
+}
+
+#board div {
+    /* width: 35vw; */
+}
+
+#board h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+.shop img {
+    width: 100vw;
+}
+
+#subscribe {
+    margin: 0;
+    background-color: rgb(244, 244, 244);
+    padding-top: 15px;
+}
+
+#submit {
+
+    font-weight: 100;
+    font-size: 11px;
+    justify-content: center;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+#submit a {
+    color: black;
+}
+
+#signUp {
+    width: 400px;
+    height: 36px;
+    padding-left: 0px;
+    padding-top: 16px;
+    background-color: #ff4a32;
+    margin-bottom: 15px;
+}
+
+
+#signUp a {
+    text-align: center;
+    font-size: 14x;
+    color: #fff;
+    text-decoration: none;
+}
+
+#signUp:hover {
+    animation-name: button;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#constant {
+    background-color: rgb(167, 167, 167);
+    border-radius: 8px;
+    width: 110px;
+    padding-top: 3px;
+    margin-bottom: 70px;
+
+}
+
+#inputEmail {
+    border: 1px solid #b6b6b6;
+    border-radius: 3px;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+#email {
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 30px;
+
+}
+
+#features {
+    box-sizing: border-box;
+    height: 350px;
+    width: 100vw;
+    padding-top: 35px;
+    padding-left: 190px;
+    padding-right: 190px;
+    background-color: #000;
+    align-items: top;
+    justify-content: space-around;
+}
+
+#features div {
+    width: 15vw;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#features div img {
+    width: 90px;
+}
+
+#footer1 {
+    box-sizing: border-box;
+    height: 350px;
+    width: 100vw;
+    padding-top: 35px;
+    padding-left: 300px;
+    padding-right: 200px;
+    background-color: rgb(244, 244, 244);
+    align-items: top;
+}
+
+#footer1 div {
+    width: 22vw;
+    color: black;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 8px;
+}
+
+h3 {
+    font-size: large;
+}
+
+#footer1 div img {
+    width: 160px;
+}
+
+#footer1 div a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer1 div a:hover {
+    animation-name: menuColor;
+    animation-duration: 0.5s;
+    animation-fill-mode: forward;
+    color: #ff4a32;
+}
+
+#f1-1 {
+    width: 70px;
+}
